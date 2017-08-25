@@ -1,0 +1,100 @@
+/* START BOOTSTRAP */
+.btn {
+  position: relative;
+  font-family: $mainFont;
+  text-transform: uppercase;
+  outline: none;
+	border: none;
+  border-radius: 0;
+  transition: all .2s ease-in-out;
+  box-shadow: 0 2px 13px -2px rgba(0, 0, 0, 0.52);
+	[class*=btn-] {
+    border-color: transparent;
+  }
+  &:hover {
+    transform: translateY(-3px);
+  }
+  &:active {
+    outline: none !important;
+  }
+  &:focus {
+    outline: none !important;
+  }
+  &-lg {
+    border-radius: 2px;
+    padding: 6px 26px;
+  }
+}
+.popover {
+  font-family: $secondaryFont;
+  padding: 0;
+  text-align: center;
+  border-radius: 0px !important;
+  box-shadow: 0 0px 8px -0px rgba(0, 0, 0, 0.3);
+  border: none;
+  &-title {
+    background: $blue;
+    border: none;
+    color: $white;
+  }
+}
+
+
+
+//carousel fade effect
+.carousel-fade {
+  .carousel-inner {
+    box-shadow: 0 0 27px -8px rgba(0,0,0,.64);
+    .item {
+      transition-property: opacity;
+    }
+
+    .item,
+    .active.left,
+    .active.right {
+      opacity: 0;
+    }
+
+    .active,
+    .next.left,
+    .prev.right {
+      opacity: 1;
+    }
+
+    .next,
+    .prev,
+    .active.left,
+    .active.right {
+      left: 0;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .carousel-control {
+    z-index: 2;
+  }
+  .carousel-indicators li {
+    border: 2px solid #2a384d;
+  }
+  .carousel-indicators .active {
+    background: #2a384d;
+  }
+}
+
+.carousel-fade .carousel-inner {
+  //box-shadow: none
+}
+
+
+/* form-control */
+.form-control {
+  box-shadow: none;
+  border: 1px solid #e6e6e6;
+  border-radius: 1px;
+  &:focus {
+    box-shadow: none;
+    border-color: $green;
+  }
+}
+
+/* END BOOTSTRAP */

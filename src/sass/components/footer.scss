@@ -1,0 +1,140 @@
+/* START FOOTER */
+#footer {
+  position: relative;
+  padding: 40px 0 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/cover-reverse.png") no-repeat;
+  background-blend-mode: overlay;
+  background-size: contain;
+  background-position: bottom right;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    flex: 3;
+  }
+  .col-head {
+    color: $white;
+    small {
+      color: #646E7D;
+    }
+  }
+  & > .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .contact {
+    flex: 1;
+    #contact-info {
+      @include flex(center, flex-start, column, 1);
+      color: $lighten;
+      .col {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        margin-bottom: 10px;
+        .address {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          span {
+            &:first-child {
+              font-size: 12px;
+            }
+          }
+        }
+        .fa {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 5px;
+          width: 40px;
+          height: 40px;
+          font-size: 16px;
+          border-radius: 50%;
+          background: lighten($blackColor, 5%);
+        }
+      }
+    }
+  }
+
+  #social {
+    flex: 1;
+    .social-icons {
+      display: flex;
+      .social-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        color: $lighten;
+        font-size: 16px;
+        text-decoration: none;
+        margin-right: 5px;
+        background: lighten($blackColor, 5%);
+        &:hover:first-child {
+          background: $fbColor;
+          color: $white;
+        }
+        &:hover:nth-child(2) {
+          background: $twColor;
+          color: $white;
+        }
+        &:hover:last-child {
+          background: $ghColor;
+        }
+      }
+    }
+  }
+
+  #newsletter {
+    flex: 1;
+    p {
+      color: $lighten;
+    }
+  }
+
+  #copyright {
+    @include flex(center, center, row, 1);
+    width: 100%;
+    height: 100%;
+    color: #3c495d;
+    .copyright {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      .skyline {
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+        max-width: 400px;
+      }
+      .pxlart {
+        width: inherit;
+        background: #8fa3c1;
+        color: $white;
+        text-align: center;
+          p {
+            position: relative;
+            top: -16px;
+            margin-bottom: -16px;
+            font-size: 12px;
+            z-index: 3;
+            color: #99a1ae;
+          }
+      }
+    }
+  }
+  .mask {
+    background: $blackColor;
+    @include position(absolute, 0 0 0 0);
+    z-index: 1;
+    opacity: .8;
+  }
+}
+
+/* END FOOTER */

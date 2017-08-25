@@ -1,0 +1,162 @@
+.tv {
+  &-info {
+    overflow: hidden;
+    .wgt {
+      &-weather {
+        @include fadeIn(
+          $duration: 1s
+        );
+      }
+      &-kibana {
+        @include fadeIn(
+          $duration: 1s
+        );
+      }
+      &-menu {
+        @include fadeIn(
+          $duration: 1s
+        );
+      }
+      &-bloomberg {
+        @include fadeIn();
+      }
+      &-youtube {
+        @include slideInRight(
+          $delay: 1s,
+          $duration: 1.7s
+        );
+      }
+      &-spliter {
+        @include fadeIn(
+          $duration: .5s
+        );
+        position: relative;
+        top: -46px;
+        left: 20%;
+      }
+    }
+  }
+  .vert-weather {
+    @include slideInDown(
+      $duration: 1s
+    );
+  }
+  .currency {
+    @include slideInUp(
+      $duration: 1.5s
+    );
+  }
+  .exchange {
+    @include slideInUp(
+      $duration: 1.7s
+    );
+  }
+  .wgt-menu {
+    img {
+      display: inline;
+      position: absolute;
+      z-index: 10;
+      width: 63px;
+      height: 50px !important;
+    }
+    .salads {
+      @include tada(
+        $delay: .0s,
+        $count: infinite
+      );
+      left: 110px;
+      top: 156px;
+    }
+    .fishes {
+      @include tada(
+        $delay: .1s,
+        $count: infinite
+      );
+      top: 156px;
+      left: 355px;
+    }
+    .deserts {
+      @include tada(
+        $delay: .2s,
+        $count: infinite
+      );
+      right: 110px;
+      top: 156px;
+    }
+    .soups {
+      @include tada(
+        $delay: .4s,
+        $count: infinite
+      );
+      left: 110px;
+      bottom: 45px;
+    }
+    .pizza {
+      @include tada(
+        $delay: .5s,
+        $count: infinite
+      );
+      left: 355px;
+      bottom: 45px;
+    }
+
+    .burgers {
+      @include tada(
+        $delay: .7s,
+        $count: infinite
+      );
+      right: 105px;
+      bottom: 45px;
+    }
+  }
+}
+
+@include keyframes (scrollLeft) {
+ 0%   { transform: translateX(100%); }
+ 100% { transform: translateX(-100%); }
+}
+
+/* START CARS MOVING ANIMATION */
+@include keyframes(Htransform) {
+  0% {
+    @include transform(translateX(-50%))
+  }
+  100% {
+    @include transform(translateX(100%))
+  }
+}
+
+@include keyframes(carMoving) {
+  0% {
+    @include transform(translateX(-80%))
+  }
+  100% {
+    @include transform(translateX(100%))
+  }
+}
+
+@include keyframes(ads) {
+  0% {
+    opacity: 0
+  }
+  50% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0
+  }
+}
+
+
+@include keyframes(ds) {
+  0% {
+    opacity: 0
+  }
+  50% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0
+  }
+}
+/* END CARS MOVING ANIMATION */

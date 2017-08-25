@@ -1,0 +1,20 @@
+#players {
+  .slider {
+    .slider-img {
+      //background: url("../img/players/home.jpg") no-repeat;
+      transform: $coverTransform;
+      transform-origin: $coverTransformOrigin;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: top;
+      width: 100%;
+      //height: calc(100vh - 60px);
+      .mask {
+        background: $blackColor;
+        @include position(absolute, 0 0 0 0);
+        z-index: 8;
+        opacity: .7;
+      }
+    }
+  }
+}

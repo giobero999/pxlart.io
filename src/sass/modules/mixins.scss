@@ -1,0 +1,66 @@
+@mixin border-bottom-all($borderHeight, $borderStyle, $red) {
+  border-bottom-width: $borderHeight;
+  border-bottom-style: $borderStyle;
+  border-bottom-color: $red;
+}
+
+@mixin img-all($imgBorderRadius, $imgBorderLeftRadius, $imgBorderRightRadius){
+  border-radius: 2px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+@mixin box-shadow($box-shadow){
+  box-shadow:$box-shadow;
+}
+
+@mixin font-header($fontStyle, $fontFamily, $fontSize){
+  font-style: normal;
+  font-family: $mainFont;
+  font-size: $headingFontSize;
+}
+
+
+
+/*media queries*/
+$break-small: 768px;
+@mixin respond-to($media) {
+
+  @if $media == smallScreen {
+    @media only screen and (max-width: $break-small + 1) { @content; }
+  }
+}
+
+
+
+/* DISPLAY FLEX MIXINS */
+@mixin flex($justify, $align, $direction, $flex) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin section($backgroundColor, $minHeight) {
+  background: $backgroundColor;
+  min-height: $minHeight;
+}
+
+@mixin hedingColor($color, $fontSize) {
+  color: $color;
+  font-size: $fontSize;
+}
+
+@mixin bg($image, $repeat: no-repeat) {
+  background: {
+        image: $image;
+        repeat: $repeat;
+    }
+}
+
+@mixin border-all($width, $style, $color, $red: $red) {
+  border-width: $width;
+  border-style: $style;
+  border-color: $color;
+  border-bottom-color: $red;
+}

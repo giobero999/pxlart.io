@@ -1,0 +1,35 @@
+#usecases {
+  .flex-container {
+    display: flex;
+  }
+  .use {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .single-usecase {
+    position: relative;
+    margin-top: 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 14px rgba(0,0,0,.1);
+    .figure {
+      .case-title {
+        position: absolute;
+        top: -18px;
+        right: 0px;
+        color: $white;
+        padding: 8px;
+      }
+    }
+    .case-desc {
+      font-size: 16px;
+      padding: 8px;
+    }
+    .case-more {
+      display: flex;
+      padding: 0px 8px 8px;
+      justify-content: flex-end;
+    }
+  }
+}

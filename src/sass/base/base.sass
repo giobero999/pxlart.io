@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Aldrich|Source+Sans+Pro')
+
+*
+  box-sizing: border-box
+
+html, body
+  background: $blackColor
+  height: 100%
+  width: 100%
+  font-family: $mainFont
+
+a
+  color: $red
+  @include transition(all .3s)
+  &:hover
+    color: lighten($red, 6%)
+    text-decoration: none
+
+h1,h2,h3,h4,h5,h6
+  font-family: $mainFont
+  text-transform: uppercase
+
+p
+  font-family: $secondaryFont
+
+
+.centered
+  text-align: center

@@ -1,0 +1,20 @@
+#details {
+  .section-two {
+    padding: 0 0 80px;
+  }
+  .usecases-details {
+    position: relative;
+    top: -140px;
+    margin-bottom: -140px;
+    z-index: 44;
+    background: $white;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.06);
+    .go-back {
+      position: absolute;
+      left: 0;
+    }
+    .case-main-info {
+      margin-top: 60px;
+    }
+  }
+}

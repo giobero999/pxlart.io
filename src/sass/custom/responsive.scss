@@ -1,0 +1,174 @@
+@media screen and (max-width: 580px) {
+  .tablist {
+    li {
+      a {
+        width: 50px !important;
+        height: 50px !important
+      }
+    }
+  }
+  .slide-el {
+    flex-direction: column-reverse;
+  }
+  #contact {
+    .information {
+      flex-direction: column;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .tv {
+    height: inherit !important;
+    background: none !important;
+    box-shadow: none !important;
+  }
+  #store {
+    .feature {
+      &:before {
+        display: none !important;
+      }
+      .feature-title {
+        display: none !important;
+      }
+      .main-title {
+        h3 {
+          margin: 0 !important;
+        }
+        .app-desc {
+          display: block !important;
+        }
+      }
+    }
+    .coming-text {
+      position: static !important;
+      display: block !important;
+      height: 100% !important;
+    }
+  }
+  .wgt-youtube {
+    position: static !important;
+    width: 100% !important;
+  }
+  .wizard-steps {
+    display: none !important;
+  }
+  #footer .content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px)  {
+  .tv {
+    height: 421px !important;
+  }
+}
+
+@media screen and (max-width: 991px)  {
+  #software {
+    .section-two {
+      padding: 20px 0;
+    }
+  }
+  .feature, .software-els {
+    .row {
+      display: block !important;
+      & > div {
+        padding: 40px 0 0;
+      }
+    }
+  }
+  #spliting, #timing, #grouping, #monitoring {
+    padding: 20px 0 !important;
+  }
+  .feature-desc {
+    h4 {
+      padding: 0 10px;
+    }
+  }
+  .section-last {
+    padding: 0;
+  }
+  .content-text {
+    position: relative !important;
+    top: -20px !important;
+    display: block !important;
+    animation-name: fadeIn !important;
+  }
+  .bottom-content {
+    &:hover {
+      transform: none !important;
+    }
+    &:hover .content-icon img {
+      transform: none !important;
+    }
+  }
+  #usecases {
+    .flex-container {
+      display: block;
+    }
+    .single-usecase {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  #details {
+    .section-two {
+      background: $white;
+    }
+    .usecases-details {
+      position: static !important;
+      box-shadow: none;
+      margin-bottom: 0;
+    }
+    .go-back {
+      display: none;
+    }
+  }
+  #howItWorks {
+    .platform-row {
+      display: block;
+    }
+    .solving-row {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1201px)  {
+  .tv {
+    height: 359px !important;
+  }
+  .salads {
+    top: 126px !important;
+    left: 87px !important;
+  }
+  .fishes {
+    top: 126px !important;
+    left: 292px !important;
+  }
+  .deserts {
+    top: 126px !important;
+    right: 85px !important;
+  }
+
+  .soups {
+    left: 87px !important;
+    bottom: 33px !important;
+  }
+  .pizza {
+    left: 292px !important;
+    bottom: 33px !important;
+  }
+  .burgers {
+    right: 85px !important;
+    bottom: 33px !important;
+  }
+}
+
+@media screen and (min-width: 1880px) {
+  .carousel-inner {
+    box-shadow: none !important;
+  }
+}

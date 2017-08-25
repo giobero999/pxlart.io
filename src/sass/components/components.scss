@@ -1,0 +1,199 @@
+#sticker-sticky-wrapper {
+  position: relative;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.overflow {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.text-right {
+  text-align: right;
+  text-align: right;
+}
+
+.bg-red {
+  background: $red;
+}
+.bg-blue {
+  background: $blue;
+}
+.bg-green {
+  background: #52b783;
+}
+
+.bg-yellow {
+  background: #f3c065;
+}
+
+.border-red {
+  border-top: $red;
+}
+.border-blue {
+  border-top: $blue;
+}
+.border-green {
+  border-top: #52b783;
+}
+
+.border-yellow {
+  border-top: #f3c065;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.padding0 {
+  padding: 0 !important;
+}
+
+.padding20 {
+  padding: 20px;
+}
+.padding40 {
+  padding: 40px;
+}
+
+.margin0 {
+  margin: 0px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.slider {
+  position: relative;
+  @include flex(center, center, column, null);
+  overflow: hidden;
+  z-index: 9;
+  width: 100%;
+  height: $coverHeight;
+  @include respond-to(maxSmall) {
+    height: 300px;
+  };
+  @include fadeIn(
+    $duration: 2s
+  );
+  .slider-img {
+    background: url("../img/cover.png") no-repeat;
+    //transform: $coverTransform;
+    //background-attachment: fixed;
+    background-size: contain;
+    background-position: bottom left;
+    width: 100%;
+    height: 100%;
+    .mask {
+      background: $blackColor;
+      @include position(absolute, 0 0 0 0);
+      z-index: 8;
+      opacity: .7;
+    }
+  }
+}
+
+.header-text {
+  @include fadeIn(
+    $duration: 3s
+  );
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  text-align: center;
+  h1 {
+    font-size: 35px;
+    color: $white;
+    margin-bottom: -20px;
+  }
+  p {
+    color: $white;
+    width: 50%;
+    font-size: 16px;
+  }
+}
+
+.active-menu {
+  border-bottom: 2px solid $red;
+}
+
+.heading-dark {
+  @include flex(center, center, column, 100%);
+  position: relative;
+  margin-bottom: -6px;
+  font-size: $headingFontSize;
+  text-transform: uppercase;
+  font-family: $mainFont;
+}
+
+.heading-light {
+  @extend .heading-dark;
+  color: $white;
+}
+
+
+.red-line {
+  width: 80px;
+  height: 2px;
+  margin: 0px auto 5px;
+  background: $red;
+  @include border-bottom-all($borderHeight, $borderStyle, $red);
+}
+
+.description {
+  font-family: $secondaryFont;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.active a img {
+  border-bottom: 3px solid $red;
+}
+
+.main-img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-one {
+  @include section($sectionFirstColor, null);
+  position: relative;
+  padding: 40px 0 80px;
+}
+.section-two {
+  @include section($sectionSecColor, null);
+  position: relative;
+  padding: 40px 0 80px;
+}
+
+.section-three {
+  @include section($sectionFirstColor, null);
+  position: relative;
+  padding: 40px 0 40px;
+}
+
+.section-last {
+  @include section($sectionSecColor, null);
+  position: relative;
+  padding: 0px 0 80px;
+}
+
+#hiddenWizard {
+  display: none;
+  position: absolute;
+  z-index: -1111111;
+}
