@@ -1,13 +1,13 @@
 <!-- footer -->
 <section>
   <footer id="footer">
-    <div class="container ">
+    <div class="container">
       <div class="content">
-        <div class="contact">
+        <div id="contact">
           <div class="col-head">
             <h4>Contact Info</h4>
           </div>
-          <div id="contact-info">
+          <div class="contact-info">
             <div class="col phone-number">
               <span class="fa fa-phone"></span>
               <span>+44 20 8144 3258</span>
@@ -41,17 +41,17 @@
             </a>
           </div>
         </div>
-        <div id="newsletter">
+        <div id="privacy">
           <div class="col-head">
-            <h4>About Company</h4>
+            <h4>Privacy Policy & Terms of Service</h4>
           </div>
-          <div class="">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
-              <a href="./about.php">
-                More
-              </a>
-            </p>
+          <div class="links">
+            <a href="./privacy-policy.php">
+              Privacy Policy
+            </a>
+            <a href="./terms.php">
+              Terms of Service
+            </a>
           </div>
         </div>
       </div>

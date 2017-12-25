@@ -1,6 +1,9 @@
 <header class="cd-auto-hide-header">
   <div class="logo">
-    <img src="img/logo.svg" alt="" width="150px" />
+    <a href="./index.php" >
+      <img src="img/logo.svg" alt="" width="150px" />
+    </a>
+
   </div>
 
   <nav class="cd-primary-nav">
@@ -21,7 +24,7 @@
       <li><a href="./usecases.php" class="link" >Usecases</a></li>
       <li><a href="./contact.php" class="link" >Contact</a></li>
       <li>
-        <a href="./contact.php" class="link" >
+        <a href="https://cms.pixelart.ai" target="blank" class="link" >
           <button type="button" name="button" class="btn btn-success btn-lg">Demo</button>
         </a>
     </li>
